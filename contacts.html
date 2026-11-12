@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Алина Арутюнян</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Главная</a>
+                <a class="nav-link" href="about.html">О проекте</a>
+                <a class="nav-link active" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Контакты</h1>
+                <p class="text-center fs-5 mb-4">Вы можете написать мне на почту: 
+ <strong class="text-primary">alina1112008@mail.ru</strong></p>
+                
+                <h3 class="text-center mb-3">Или оставьте сообщение здесь:</h3>
+                
+                <form id="contactForm" class="card p-4 shadow-sm">
+                    <div class="mb-3">
+                        <input id="name" class="form-control" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="mb-3">
+                        <input id="email" class="form-control" type="text" placeholder="Ваш Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="comment" class="form-control" rows="3" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                </form>
+                <p id="formMessage" class="text-center mt-3"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <p class="text-muted mb-0">© 2026 Алина Арутюнян</p>
+    </footer>
+
+</body>
+</html>

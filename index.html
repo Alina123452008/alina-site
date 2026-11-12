@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Алина Арутюнян</a>
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Главная</a>
+                <a class="nav-link" href="about.html">О проекте</a>
+                <a class="nav-link" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 text-center">
+        <h1 class="display-5 fw-bold text-primary mb-3">Здравствуйте!</h1>
+        
+        <img src="avatar.jpg" alt="Фото Алины" class="img-fluid rounded-circle mb-4 shadow" style="max-width: 200px;">
+        
+        <p class="lead">Это моя первая страница, написанная на HTML, CSS и Bootstrap.</p>
+        <p>Я учусь создавать сайты с нуля. Здесь я применяю свои знания на практике.</p>
+        
+        <button id="showMore" class="btn btn-primary mt-3">Подробнее</button>
+        
+        <!-- Тот самый текст с ВГУ, о котором ты просила -->
+        <p id="moreText" class="d-none mt-3 fs-5">Я учусь на ФКН в ВГУ на прикладной информатике в экономике, и сейчас изучаю JavaScript, чтобы делать сайты интерактивными!</p>
+        
+        <div class="mt-4">
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#infoModal">
+                Связаться со мной (Окно)
+            </button>
+        </div>
+
+        <section id="projects" class="row g-4 mt-4 justify-content-center">
+        </section>
+    </main>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Мои контакты</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            Вы можете написать мне на почту: 
+ <strong class="text-primary fs-5">alina1112008@mail.ru</strong>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <p class="text-muted mb-0">© 2026 Алина Арутюнян</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
